@@ -9,6 +9,6 @@ public class BooleanInput {
         // write your program here
         System.out.println("Write something:");
         Boolean userInput = Boolean.valueOf(scanner.nextLine());
-        System.out.println("True or false?" + userInput);
+        System.out.println("True or false? " + userInput);
     }
 }
