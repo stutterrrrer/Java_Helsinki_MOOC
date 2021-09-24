@@ -20,9 +20,7 @@ public class Stack {
 	}
 
 	public String take() {
-		String target = this.list.get(this.list.size() - 1);
-		// can't do list.remove(target); because there may be different elements that have the same content as target
-		this.list.remove(this.list.size() - 1);
-		return target;
+		// from mooc fi's suggested solution: remove() returns the removed element. (see remove() declaration)
+		return this.list.remove(this.list.size() - 1);
 	}
 }
