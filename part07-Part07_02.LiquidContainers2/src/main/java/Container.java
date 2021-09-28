@@ -7,6 +7,9 @@ public class Container {
 		liquid = 0;
 	}
 
+	public int contains() {
+		return liquid;
+	}
 	public void add(int amount) {
 		if (amount >= 0) {
 			liquid += amount;
@@ -14,13 +17,12 @@ public class Container {
 		}
 	}
 
-	public int remove(int amount) {
+	public void remove(int amount) {
 		int removed = 0;
 		if (amount >= 0) {
 			removed = Math.min(amount, liquid);
 			liquid -= removed;
 		}
-		return removed;
 	}
 
 	public String toString() {

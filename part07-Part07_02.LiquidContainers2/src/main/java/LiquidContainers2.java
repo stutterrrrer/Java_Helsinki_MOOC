@@ -23,7 +23,9 @@ public class LiquidContainers2 {
 					first.add(amount);
 					break;
 				case "move":
-					second.add(first.remove(amount));
+					int beforeMove = first.contains();
+					first.remove(amount);
+					second.add(beforeMove - first.contains());
 					break;
 				case "remove":
 					second.remove(amount);
