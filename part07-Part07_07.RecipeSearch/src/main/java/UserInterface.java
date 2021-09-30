@@ -11,12 +11,12 @@ public class UserInterface {
 	}
 
 	public void start() {
-		System.out.println("Commands:");
-		System.out.println("list - lists the recipes");
-		System.out.println("stop - stops the program");
-		System.out.println("find name - searches recipes by name");
-		System.out.println("find cooking time - searches recipes by cooking time");
-		System.out.println("find ingredient - searches recipes by ingredient");
+		System.out.println("Commands:\n"
+		+ "list - lists the recipes\n"
+		+ "stop - stops the program\n"
+		+ "find name - searches recipes by name\n"
+		+ "find cooking time - searches recipes by cooking time\n"
+		+ "find ingredient - searches recipes by ingredient");
 
 		while (true) {
 			System.out.print("Enter command: ");
